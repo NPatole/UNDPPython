@@ -23,16 +23,45 @@ def setup(request):
     BaseClass.driver.maximize_window()
     from pageObjects.SignInPage import SignInPage
     signIn = SignInPage(BaseClass.driver)
-    # signIn.click_on_button(signIn.login)
-    # signIn.enter_text(signIn.emailIdText, "sandip.mahajan@undp.org")
-    # signIn.click_on_button(signIn.nextbutton)
-    # signIn.enter_text(signIn.passwordText, "Quest12!@")
-    # signIn.click_on_button(signIn.sign)
-    # signIn.click_on_button(signIn.yes)
+    signIn.click_on_button(signIn.login)
+    signIn.enter_text(signIn.emailIdText, "sandip.mahajan@undp.org")
+    signIn.click_on_button(signIn.nextbutton)
+    signIn.enter_text(signIn.passwordText, "Quest12!@")
+    signIn.click_on_button(signIn.sign)
+    signIn.click_on_button(signIn.yes)
     yield
     BaseClass.driver.quit()
 
 
+
+
+@pytest.mark.hookwrapper
+def pytest_runtest_makereport(item):
+    """
+    Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
+    :param item:
+    """
+    pytest_html = item.config.pluginmanager.getplugin('html')
+    outcome = yield
+    report = outcome.get_result()
+    extra = getattr(report, 'extra', [])
+    if report.when == 'call' or report.when == "setup":
+        xfail = hasattr(report, 'wasxfail')
+        if (report.skipped and xfail) or (report.failed and not xfail):
+            file_name1 = report.nodeid.replace("::", "_")+".png"
+            file_name = file_name1.replace("/", "_")
+            _capture_screenshot(file_name)
+
+            if file_name:
+                html = '<div><img src="/PythonSelFramework/Screenshots/%s" alt="SCREENSHOT" style="width:600px;height:228px;" ' \
+                       'onclick="window.open(this.src)" align="right"/></div>'%file_name
+                extra.append(pytest_html.extras.html(html))
+        report.extra = extra
+
+
+def _capture_screenshot(name):
+     BaseClass.driver.get_screenshot_as_file("/Users/tml/Desktop/Automation_Projects/Python_Project/PythonSelFramework/Screenshots/"+name)
+#     BaseClass.driver.get_screenshot_as_file(name)
 
 # @pytest.mark.hookwrapper
 # def pytest_runtest_makereport(item):
@@ -64,33 +93,7 @@ def setup(request):
 #     BaseClass.driver.get_screenshot_as_file(name)
 
 
-@pytest.mark.hookwrapper
-def pytest_runtest_makereport(item):
-    """
-    Extends the PyTest Plugin to take and embed screenshot in html report, whenever test fails.
-    :param item:
-    """
-    pytest_html = item.config.pluginmanager.getplugin('html')
-    outcome = yield
-    report = outcome.get_result()
-    extra = getattr(report, 'extra', [])
-    if report.when == 'call' or report.when == "setup":
-        xfail = hasattr(report, 'wasxfail')
-        if (report.skipped and xfail) or (report.failed and not xfail):
-            file_name1 = report.nodeid.replace("::", "_")+".png"
-            file_name = file_name1.replace("/", "_")
-            _capture_screenshot(file_name)
 
-            if file_name:
-                html = '<div><img src="/PythonSelFramework/Screenshots/%s" alt="SCREENSHOT" style="width:600px;height:228px;" ' \
-                       'onclick="window.open(this.src)" align="right"/></div>'%file_name
-                extra.append(pytest_html.extras.html(html))
-        report.extra = extra
-
-
-def _capture_screenshot(name):
-     BaseClass.driver.get_screenshot_as_file("/Users/tml/Desktop/Automation_Projects/Python_Project/PythonSelFramework/Screenshots/"+name)
-#     BaseClass.driver.get_screenshot_as_file(name)
 
 
 
