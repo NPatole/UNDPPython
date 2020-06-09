@@ -8,8 +8,6 @@ class TestFleets(BaseClass):
     fleets = Fleets(driver)
 
     def test_navigateToFleetMenu(self):
-#        time.sleep(5)
-        assert ("testing" == "testing")
         if not TestFleets.fleets.element_is_visible(TestFleets.fleets.configActiveMenu):
             TestFleets.fleets.click_on_button(TestFleets.fleets.tenantDropDown)
             TestFleets.fleets.select_dropdown_text(TestFleets.fleets.teanantList, self.configfileParser("Tenant"))
