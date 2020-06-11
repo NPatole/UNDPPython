@@ -9,9 +9,11 @@ from utilities import ConfigParser
 import logging
 
 
+
 class TestUsers(BaseClass):
     users = Users(driver)
 
+    @pytest.fixture(scope="module", autouse=True)
     def test_navigateToUsersMenu(self):
         time.sleep(5)
         if not TestUsers.users.element_is_visible(TestUsers.users.configActiveMenu):
@@ -20,7 +22,6 @@ class TestUsers(BaseClass):
             TestUsers.users.click_on_button(TestUsers.users.configMenu)
 
     def test_crud_superAdmin(self):
-        time.sleep(2)
         TestUsers.users.click_on_button(TestUsers.users.usersMenu)
         TestUsers.users.click_on_button(TestUsers.users.superAdminTab)
         TestUsers.users.click_on_button(TestUsers.users.addSuperAdminButton)
@@ -33,7 +34,6 @@ class TestUsers(BaseClass):
         assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "User - prashant.tambe@undp.org has been deleted successfully.")
 
     def test_crud_fleetOnwer(self):
-        time.sleep(5)
         TestUsers.users.click_on_button(TestUsers.users.usersMenu)
         TestUsers.users.click_on_button(TestUsers.users.fleetOwnerTab)
         TestUsers.users.click_on_button(TestUsers.users.addFleetAdminButton)
@@ -71,9 +71,6 @@ class TestUsers(BaseClass):
         TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
         TestUsers.users.click_on_button(TestUsers.users.deleteButton)
         assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "User - prashant.tambe@undp.org has been deleted successfully.")
-
-
-
 
 
 

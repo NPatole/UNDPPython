@@ -1,4 +1,7 @@
 import time
+
+import pytest
+
 from pageObjects.Fleets import Fleets
 from tests.conftest import BaseClass, driver
 
@@ -7,12 +10,12 @@ from tests.conftest import BaseClass, driver
 class TestFleets(BaseClass):
     fleets = Fleets(driver)
 
+    @pytest.fixture(scope="module", autouse=True)
     def test_navigateToFleetMenu(self):
         if not TestFleets.fleets.element_is_visible(TestFleets.fleets.configActiveMenu):
             TestFleets.fleets.click_on_button(TestFleets.fleets.tenantDropDown)
             TestFleets.fleets.select_dropdown_text(TestFleets.fleets.teanantList, self.configfileParser("Tenant"))
             TestFleets.fleets.click_on_button(TestFleets.fleets.configMenu)
-        assert ("test" == "testing")
 
 
     def test_addFleet(self):
