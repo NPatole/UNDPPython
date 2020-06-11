@@ -14,15 +14,11 @@ class BasePage:
     def __init__(self, driver):
         self.driver = driver
 
-
     userTableId = (By.XPATH, "//table[@id='userDatatableId']")
     fleetTableId = (By.XPATH, "//table[@id='fleetListTblId']")
     searchTextBox = (By.XPATH, "//input[@type='search']")
     alertDialog = (By.XPATH, "//div[@role='alertdialog']")
     configActiveMenu = (By.XPATH, "//a[@aria-expanded='true' and @href='#Configuration']")
-
-
-
 
     def wait_for_element(self, locator):
 
@@ -31,7 +27,7 @@ class BasePage:
     def click_on_button(self, locator):
 
         try:
-            time.sleep(5)
+            time.sleep(2)
             self.wait_for_element(locator)
             self.driver.find_element(*locator).click()
         except  StaleElementReferenceException as Exception:
@@ -45,7 +41,7 @@ class BasePage:
     def enter_text(self, locator, textToEnter):
 
         try:
-            time.sleep(3)
+            time.sleep(2)
             self.wait_for_element(locator)
             time.sleep(1)
             self.driver.find_element(*locator).clear()
@@ -63,6 +59,7 @@ class BasePage:
             select.select_by_visible_text(selectText)
             # select by value
             # select.select_by_value('1')
+
         except Exception as e:
             print("Exception", e)
 
@@ -80,10 +77,10 @@ class BasePage:
 
     def get_entry_intable(self, locator, text):
         try:
- #           self.wait_for_element(locator)
+            self.wait_for_element(locator)
             table_id = self.driver.find_element(*locator)
             rows = table_id.find_elements(By.TAG_NAME, "tr")  # get all of the rows in the table
-            for row in rows[1:]: # skip first row in table (Header row)
+            for row in rows[1:]:  # skip first row in table (Header row)
                 # Get the columns (all the column 2)
                 col = row.find_elements(By.TAG_NAME, "td")[2]
                 if col.text == text:
@@ -125,11 +122,11 @@ class BasePage:
         except Exception as e:
             print("Exception ", e)
 
-    def element_is_visible (self, locator):
+    def element_is_visible(self, locator):
         try:
-#            self.wait_for_element(locator)
+            # self.wait_for_element(locator)
             self.driver.find_element(*locator)
+
         except NoSuchElementException:
             return False
         return True
-
