@@ -34,7 +34,49 @@ class TestUsers(BaseClass):
         TestUsers.users.click_on_button(TestUsers.users.deleteButton)
         assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
 
+    def test_crud_fleetOnwer(self):
+        TestUsers.users.click_on_button(TestUsers.users.usersMenu)
+        TestUsers.users.click_on_button(TestUsers.users.fleetOwnerTab)
+        TestUsers.users.click_on_button(TestUsers.users.addFleetAdminButton)
+        TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
+        TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.addButton)
+        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "Fleet owner user added successfully.")
+        TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
+        TestUsers.users.click_on_button(TestUsers.users.deleteButton)
+        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
 
+    def test_crud_driver(self):
+        time.sleep(5)
+        TestUsers.users.click_on_button(TestUsers.users.usersMenu)
+        TestUsers.users.click_on_button(TestUsers.users.driverTab)
+        TestUsers.users.click_on_button(TestUsers.users.addDriverButton)
+        TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
+        TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.addButton)
+        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "Vehicle owner (driver) user added successfully.")
+        TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
+        TestUsers.users.click_on_button(TestUsers.users.deleteButton)
+        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
+
+
+    def test_crud_passenger(self):
+        time.sleep(5)
+        TestUsers.users.click_on_button(TestUsers.users.usersMenu)
+        TestUsers.users.click_on_button(TestUsers.users.passengerTab)
+        TestUsers.users.click_on_button(TestUsers.users.addPassengerButton)
+        TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
+        TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.addButton)
+        test = TestUsers.users.get_text(TestUsers.users.alertDialog)
+        print ("11111111111111111 : " + test)
+        assert ( test == "Passenger user added successfully.")
+        TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
+        TestUsers.users.click_on_button(TestUsers.users.deleteButton)
+        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
 
 
 
