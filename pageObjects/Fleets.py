@@ -28,7 +28,7 @@ class Fleets(BasePage):
 
     def assignOwnerToFleet(self):
         self.click_on_button(self.assignOwner)
-        self.enter_text(self.searchTextBox, Fleets.baseClass.configfileParser("UserName"))
+        self.enter_text(self.searchTextBox, Fleets.baseClass.configfileParser("UserEmailId"))
         self.click_on_button(self.selectCheckBox)
         self.click_on_button(self.assignButton)
         self.click_on_button(self.addButton)
