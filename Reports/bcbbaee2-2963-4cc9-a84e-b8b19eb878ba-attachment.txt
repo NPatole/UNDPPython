@@ -1,8 +1,0 @@
-('Exception', TimeoutException())
-('Exception', TimeoutException())
-('Exception', TimeoutException())
-('Exception', TimeoutException())
-('Exception', WebDriverException())
-('Exception', WebDriverException())
-('Exception', WebDriverException())
-('Exception', WebDriverException())

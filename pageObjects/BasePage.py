@@ -114,6 +114,7 @@ class BasePage:
             print("Exception ", e)
 
     def get_text(self, locator):
+        # type: (object) -> object
         try:
             self.wait_for_element(locator)
             text = self.driver.find_element(*locator).text

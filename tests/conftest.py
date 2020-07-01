@@ -4,6 +4,8 @@ import logging
 import configparser
 
 import pytest
+import allure
+from allure_commons.types import AttachmentType
 from selenium import webdriver
 import time
 
@@ -17,7 +19,7 @@ def setup(request):
     baseClass = BaseClass()
     #    browser_name=request.config.getoption("browser_name")
 #    if browser_name == "chrome":
-    BaseClass.driver = webdriver.Chrome(executable_path= baseClass.configfileParser("ChromeDriverPath"))
+#    BaseClass.driver = webdriver.Chrome(executable_path= baseClass.configfileParser("ChromeDriverPath"))
     BaseClass.driver.get(baseClass.configfileParser("URL"))
     BaseClass.driver.maximize_window()
     from pageObjects.SignInPage import SignInPage
@@ -55,6 +57,8 @@ def pytest_runtest_makereport(item):
                 html = '<div><img src="/PythonSelFramework/Screenshots/%s" alt="SCREENSHOT" style="width:600px;height:228px;" ' \
                        'onclick="window.open(this.src)" align="right"/></div>'%file_name
                 extra.append(pytest_html.extras.html(html))
+#                allure.attach(BaseClass.driver.get_screenshot_as_png(), name=file_name, attachment_type=AttachmentType.PNG)
+
         report.extra = extra
 
 

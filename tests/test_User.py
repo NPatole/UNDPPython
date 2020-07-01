@@ -1,5 +1,7 @@
 import time
-import pytest as pytest
+import pytest
+import allure
+from allure_commons.types import AttachmentType
 from selenium.webdriver.support.wait import WebDriverWait
 
 from selenium.webdriver.common.by import By
@@ -21,6 +23,8 @@ class TestUsers(BaseClass):
             TestUsers.users.select_dropdown_text(TestUsers.users.teanantList, self.configfileParser("Tenant"))
             TestUsers.users.click_on_button(TestUsers.users.configMenu)
 
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.step("Add Super Admin Role")
     def test_crud_superAdmin(self):
         TestUsers.users.click_on_button(TestUsers.users.usersMenu)
         TestUsers.users.click_on_button(TestUsers.users.superAdminTab)
@@ -28,12 +32,13 @@ class TestUsers(BaseClass):
         TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
         TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.addButton)
-        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "Super admin user added successfully.")
+        assert ("Super admin user added successfully." == TestUsers.users.get_text(TestUsers.users.alertDialog))
         TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
         TestUsers.users.click_on_button(TestUsers.users.deleteButton)
-        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
+        assert (self.configfileParser("UserDeleteMassage") == TestUsers.users.get_text(TestUsers.users.alertDialog))
 
+#    @allure.severity(allure.severity_level.BLOCKER)
     def test_crud_fleetOnwer(self):
         TestUsers.users.click_on_button(TestUsers.users.usersMenu)
         TestUsers.users.click_on_button(TestUsers.users.fleetOwnerTab)
@@ -41,11 +46,11 @@ class TestUsers(BaseClass):
         TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
         TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.addButton)
-        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "Fleet owner user added successfully.")
+        assert ("Fleet owner user added successfully." == TestUsers.users.get_text(TestUsers.users.alertDialog))
         TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
         TestUsers.users.click_on_button(TestUsers.users.deleteButton)
-        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
+        assert (self.configfileParser("UserDeleteMassage") == TestUsers.users.get_text(TestUsers.users.alertDialog))
 
     def test_crud_driver(self):
         time.sleep(5)
@@ -55,11 +60,11 @@ class TestUsers(BaseClass):
         TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
         TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.addButton)
-        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "Vehicle owner (driver) user added successfully.")
+        assert ("Vehicle owner (driver) user added successfully."== TestUsers.users.get_text(TestUsers.users.alertDialog))
         TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
         TestUsers.users.click_on_button(TestUsers.users.deleteButton)
-        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
+        assert (self.configfileParser("UserDeleteMassage") == TestUsers.users.get_text(TestUsers.users.alertDialog))
 
 
     def test_crud_passenger(self):
@@ -70,13 +75,11 @@ class TestUsers(BaseClass):
         TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
         TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.addButton)
-        test = TestUsers.users.get_text(TestUsers.users.alertDialog)
-        print ("11111111111111111 : " + test)
-        assert ( test == "Passenger user added successfully.")
+        assert ("Passenger user added successfully." == TestUsers.users.get_text(TestUsers.users.alertDialog))
         TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
         TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
         TestUsers.users.click_on_button(TestUsers.users.deleteButton)
-        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
+        assert (self.configfileParser("UserDeleteMassage") == TestUsers.users.get_text(TestUsers.users.alertDialog))
 
 
 

@@ -1,7 +1,7 @@
 import time
 
 import pytest
-
+import allure
 from pageObjects.Fleets import Fleets
 from tests.conftest import BaseClass, driver
 
@@ -30,5 +30,4 @@ class TestFleets(BaseClass):
                                                        self.configfileParser("FleetName")):
             TestFleets.fleets.addFleet()
         TestFleets.fleets.deleteFleet()
-        assert (TestFleets.fleets.get_text(TestFleets.fleets.alertDialog) == self.configfileParser(
-            "FleetDeleteMassage"))
+        assert (self.configfileParser("FleetDeleteMassage") == TestFleets.fleets.get_text(TestFleets.fleets.alertDialog))
