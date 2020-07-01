@@ -1,0 +1,297 @@
+{
+  "cc29d7d73804ca54d9a668add6b31ee4" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dff4e75f47f115f4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\n  - Duplicate email\n  + Fleet owner user added successfully.",
+      "time" : {
+        "start" : 1591948627137,
+        "stop" : 1591948642313,
+        "duration" : 15176
+      }
+    } ]
+  },
+  "f5a7f18f82d729206ce44f4f486f3add" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dfe4d40902d1f7df",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Vehicle owner (driv... added successfully.'\n  - Duplicate email\n  + Vehicle owner (driver) user added successfully.",
+      "time" : {
+        "start" : 1592482167082,
+        "stop" : 1592482187296,
+        "duration" : 20214
+      }
+    } ]
+  },
+  "fa5d04c4bf7cdd3fe36b670a4ec589ca" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "88788beb5369d74e",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Passenger user added successfully.'\n  - Duplicate email\n  + Passenger user added successfully.",
+      "time" : {
+        "start" : 1592482188130,
+        "stop" : 1592482208340,
+        "duration" : 20210
+      }
+    } ]
+  },
+  "8007776e780f266f0c76e6dd5d0e7a67" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "64a5e67cc6ae9467",
+      "status" : "broken",
+      "statusDetails" : "UnboundLocalError: local variable 'Exception' referenced before assignment",
+      "time" : {
+        "start" : 1591948552171,
+        "stop" : 1591948602174,
+        "duration" : 50003
+      }
+    } ]
+  },
+  "898ca9c9688f1c622f18f23bb9c5b818" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "79e614ee8e0ddb85",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Passenger user added successfully.'\n  - Duplicate email\n  + Passenger user added successfully.",
+      "time" : {
+        "start" : 1591948663492,
+        "stop" : 1591948683617,
+        "duration" : 20125
+      }
+    } ]
+  },
+  "0eceec73b39e88b5633533b746f4ad68" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "861a9e9d4efc3094",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Super admin user added successfully.'\n  - Duplicate email\n  + Super admin user added successfully.",
+      "time" : {
+        "start" : 1592482209088,
+        "stop" : 1592482224947,
+        "duration" : 15859
+      }
+    } ]
+  },
+  "2c7a286c168ee1bba3047652c4978928" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1c45bc9a023e5e4d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Vehicle owner (driv... added successfully.'\n  - Duplicate email\n  + Vehicle owner (driver) user added successfully.",
+      "time" : {
+        "start" : 1591948642837,
+        "stop" : 1591948662968,
+        "duration" : 20131
+      }
+    } ]
+  },
+  "eb1cedf9db0287afa3daa1957618cc8a" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3cd5d796126c2dc4",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Super admin user added successfully.'\n  - Duplicate email\n  + Super admin user added successfully.",
+      "time" : {
+        "start" : 1591948611458,
+        "stop" : 1591948626618,
+        "duration" : 15160
+      }
+    } ]
+  },
+  "76743ed7d17cb8942dd394530ade613a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "603b7152db990f9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589966455374,
+        "stop" : 1589966455374,
+        "duration" : 0
+      }
+    } ]
+  },
+  "081d6354c61cfc433bef93aa439bfa9d" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "456ac5df3fba2ccd",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592482150146,
+        "stop" : 1592482162065,
+        "duration" : 11919
+      }
+    } ]
+  },
+  "4bd423abafdb9317afe2a33c7b8e403a" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "1e331bfbd9932ca6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1592482120975,
+        "stop" : 1592482150142,
+        "duration" : 29167
+      }
+    } ]
+  },
+  "8478670578e16690d3005a6b7169c387" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a37cb2a6133285b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589966455370,
+        "stop" : 1589966455371,
+        "duration" : 1
+      }
+    } ]
+  },
+  "771b80047b837c979bb5b9a59a27b71c" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "58b1a8499a730096",
+      "status" : "broken",
+      "statusDetails" : "UnboundLocalError: local variable 'Exception' referenced before assignment",
+      "time" : {
+        "start" : 1591948602831,
+        "stop" : 1591948605912,
+        "duration" : 3081
+      }
+    } ]
+  },
+  "142c645e98f8727a476ae93e99026ec2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "491d096a5732ad71",
+      "status" : "passed",
+      "time" : {
+        "start" : 1589966445354,
+        "stop" : 1589966455365,
+        "duration" : 10011
+      }
+    } ]
+  },
+  "3f62919f68f8fed82816ee2abe3734b2" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "85769f5d1ae68ea5",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\n  - Duplicate email\n  + Fleet owner user added successfully.",
+      "time" : {
+        "start" : 1592482225513,
+        "stop" : 1592482241179,
+        "duration" : 15666
+      }
+    } ]
+  }
+}

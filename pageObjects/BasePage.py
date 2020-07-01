@@ -91,6 +91,7 @@ class BasePage:
             print("Exception ", e)
 
     def entry_present_intable(self, locator, text):
+        # type: (object, object) -> object
         try:
             #           self.wait_for_element(locator)
             self.enter_text(self.searchTextBox, text)

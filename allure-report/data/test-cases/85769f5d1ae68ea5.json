@@ -1,0 +1,136 @@
+{
+  "uid" : "85769f5d1ae68ea5",
+  "name" : "test_crud_fleetOnwer",
+  "fullName" : "GitDemo.UNDPPython.tests.test_User.TestUsers#test_crud_fleetOnwer",
+  "historyId" : "3f62919f68f8fed82816ee2abe3734b2",
+  "time" : {
+    "start" : 1592482225513,
+    "stop" : 1592482241179,
+    "duration" : 15666
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\n  - Duplicate email\n  + Fleet owner user added successfully.",
+  "statusTrace" : "self = <tests.test_User.TestUsers instance at 0x10c47ba70>\n\n    @allure.step('Add Fleet owner')\n    def test_crud_fleetOnwer(self):\n        TestUsers.users.click_on_button(TestUsers.users.usersMenu)\n        TestUsers.users.click_on_button(TestUsers.users.fleetOwnerTab)\n        TestUsers.users.click_on_button(TestUsers.users.addFleetAdminButton)\n        TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser(\"UserName\"))\n        TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser(\"UserEmailId\"))\n        TestUsers.users.click_on_button(TestUsers.users.addButton)\n>       assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == \"Fleet owner user added successfully.\")\nE       AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\nE         - Duplicate email\nE         + Fleet owner user added successfully.\n\ntests/test_User.py:48: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1592482087185,
+      "stop" : 1592482116492,
+      "duration" : 29307
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "test_navigateToUsersMenu",
+    "time" : {
+      "start" : 1592482162068,
+      "stop" : 1592482167081,
+      "duration" : 5013
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\n  - Duplicate email\n  + Fleet owner user added successfully.",
+    "statusTrace" : "self = <tests.test_User.TestUsers instance at 0x10c47ba70>\n\n    @allure.step('Add Fleet owner')\n    def test_crud_fleetOnwer(self):\n        TestUsers.users.click_on_button(TestUsers.users.usersMenu)\n        TestUsers.users.click_on_button(TestUsers.users.fleetOwnerTab)\n        TestUsers.users.click_on_button(TestUsers.users.addFleetAdminButton)\n        TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser(\"UserName\"))\n        TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser(\"UserEmailId\"))\n        TestUsers.users.click_on_button(TestUsers.users.addButton)\n>       assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == \"Fleet owner user added successfully.\")\nE       AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\nE         - Duplicate email\nE         + Fleet owner user added successfully.\n\ntests/test_User.py:48: AssertionError",
+    "steps" : [ {
+      "name" : "Add Fleet owner",
+      "time" : {
+        "start" : 1592482225513,
+        "stop" : 1592482241178,
+        "duration" : 15665
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\n  - Duplicate email\n  + Fleet owner user added successfully.\n",
+      "statusTrace" : "  File \"/Users/tml/PycharmProjects/LearningPython/venv/lib/python2.7/site-packages/allure_commons/_allure.py\", line 157, in impl\n    return func(*a, **kw)\n  File \"/Users/tml/Desktop/Automation_Projects/Python_Project/GitDemo/UNDPPython/tests/test_User.py\", line 48, in test_crud_fleetOnwer\n    assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == \"Fleet owner user added successfully.\")\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1592482241847,
+      "stop" : 1592482241971,
+      "duration" : 124
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_User"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUsers"
+  }, {
+    "name" : "parentSuite",
+    "value" : "GitDemo.UNDPPython.tests"
+  }, {
+    "name" : "host",
+    "value" : "tml.local"
+  }, {
+    "name" : "thread",
+    "value" : "1432-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "GitDemo.UNDPPython.tests.test_User"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "85769f5d1ae68ea5.json",
+  "parameterValues" : [ ]
+}

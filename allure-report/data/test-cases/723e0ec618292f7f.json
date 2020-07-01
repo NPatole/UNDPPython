@@ -1,0 +1,84 @@
+{
+  "uid" : "723e0ec618292f7f",
+  "name" : "test_addsuperadmin3",
+  "fullName" : "tests.test_User.TestUsers#test_addsuperadmin3",
+  "historyId" : "76743ed7d17cb8942dd394530ade613a",
+  "time" : {
+    "start" : 1589964566591,
+    "stop" : 1589964566591,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1589964518286,
+      "stop" : 1589964554270,
+      "duration" : 35984
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1589964566592,
+      "stop" : 1589964566683,
+      "duration" : 91
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_User"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUsers"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "host",
+    "value" : "tml.local"
+  }, {
+    "name" : "thread",
+    "value" : "30211-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_User"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "723e0ec618292f7f.json",
+  "parameterValues" : [ ]
+}

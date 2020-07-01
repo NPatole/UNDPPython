@@ -7,6 +7,8 @@ from tests.conftest import BaseClass, driver
 from pageObjects.Users import Users
 from utilities import ConfigParser
 import logging
+import allure
+
 
 
 
@@ -22,6 +24,7 @@ class TestUsers(BaseClass):
             TestUsers.users.click_on_button(TestUsers.users.configMenu)
 
     def test_crud_superAdmin(self):
+        allure.step('Add Super admin')
         TestUsers.users.click_on_button(TestUsers.users.usersMenu)
         TestUsers.users.click_on_button(TestUsers.users.superAdminTab)
         TestUsers.users.click_on_button(TestUsers.users.addSuperAdminButton)
@@ -34,19 +37,20 @@ class TestUsers(BaseClass):
         TestUsers.users.click_on_button(TestUsers.users.deleteButton)
         assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
 
-    # def test_crud_fleetOnwer(self):
-    #     TestUsers.users.click_on_button(TestUsers.users.usersMenu)
-    #     TestUsers.users.click_on_button(TestUsers.users.fleetOwnerTab)
-    #     TestUsers.users.click_on_button(TestUsers.users.addFleetAdminButton)
-    #     TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
-    #     TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
-    #     TestUsers.users.click_on_button(TestUsers.users.addButton)
-    #     assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "Fleet owner user added successfully.")
-    #     TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
-    #     TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
-    #     TestUsers.users.click_on_button(TestUsers.users.deleteButton)
-    #     assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
-    #
+    def test_crud_fleetOnwer(self):
+        allure.step('Add Fleet owner')
+        TestUsers.users.click_on_button(TestUsers.users.usersMenu)
+        TestUsers.users.click_on_button(TestUsers.users.fleetOwnerTab)
+        TestUsers.users.click_on_button(TestUsers.users.addFleetAdminButton)
+        TestUsers.users.enter_text(TestUsers.users.nameText, self.configfileParser("UserName"))
+        TestUsers.users.enter_text(TestUsers.users.emailIDText, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.addButton)
+        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == "Fleet owner user added successfully.")
+        TestUsers.users.enter_text(TestUsers.users.searchTextBox, self.configfileParser("UserEmailId"))
+        TestUsers.users.click_on_button(TestUsers.users.deleteIcon)
+        TestUsers.users.click_on_button(TestUsers.users.deleteButton)
+        assert (TestUsers.users.get_text(TestUsers.users.alertDialog) == self.configfileParser("UserDeleteMassage"))
+
     # def test_crud_driver(self):
     #     time.sleep(5)
     #     TestUsers.users.click_on_button(TestUsers.users.usersMenu)

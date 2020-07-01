@@ -1,0 +1,107 @@
+{
+  "uid" : "58b1a8499a730096",
+  "name" : "test_deleteFleet",
+  "fullName" : "tests.test_Fleets.TestFleets#test_deleteFleet",
+  "historyId" : "771b80047b837c979bb5b9a59a27b71c",
+  "time" : {
+    "start" : 1591948602831,
+    "stop" : 1591948605912,
+    "duration" : 3081
+  },
+  "status" : "broken",
+  "statusMessage" : "UnboundLocalError: local variable 'Exception' referenced before assignment",
+  "statusTrace" : "self = <tests.test_Fleets.TestFleets instance at 0x10c983a28>\n\n    def test_deleteFleet(self):\n>       TestFleets.fleets.click_on_button(TestFleets.fleets.fleetsMenu)\n\ntests/test_Fleets.py:28: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pageObjects.Fleets.Fleets instance at 0x10c927680>, locator = ('xpath', \"//span[text()='Fleets']\")\n\n    def click_on_button(self, locator):\n    \n        try:\n            time.sleep(2)\n            self.wait_for_element(locator)\n            self.driver.find_element(*locator).click()\n        except  StaleElementReferenceException as Exception:\n            time.sleep(10)\n            self.wait_for_element(locator)\n            self.driver.find_element(*locator).click()\n    \n>       except Exception as e:\nE       UnboundLocalError: local variable 'Exception' referenced before assignment\n\npageObjects/BasePage.py:38: UnboundLocalError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "test_navigateToFleetMenu",
+    "time" : {
+      "start" : 1591948547803,
+      "stop" : 1591948552166,
+      "duration" : 4363
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1591948497854,
+      "stop" : 1591948547803,
+      "duration" : 49949
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1591948684147,
+      "stop" : 1591948684252,
+      "duration" : 105
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_Fleets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFleets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "host",
+    "value" : "tml.local"
+  }, {
+    "name" : "thread",
+    "value" : "1726-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Fleets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "58b1a8499a730096.json",
+  "parameterValues" : [ ]
+}

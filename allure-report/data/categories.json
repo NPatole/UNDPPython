@@ -1,0 +1,163 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "UnboundLocalError: local variable 'Exception' referenced before assignment",
+      "children" : [ {
+        "name" : "test_addFleet",
+        "uid" : "64a5e67cc6ae9467",
+        "parentUid" : "36dc7ed4b2d2abb787b11428fb373b41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1591948552171,
+          "stop" : 1591948602174,
+          "duration" : 50003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_deleteFleet",
+        "uid" : "58b1a8499a730096",
+        "parentUid" : "36dc7ed4b2d2abb787b11428fb373b41",
+        "status" : "broken",
+        "time" : {
+          "start" : 1591948602831,
+          "stop" : 1591948605912,
+          "duration" : 3081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "36dc7ed4b2d2abb787b11428fb373b41"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  }, {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Duplicate email' == 'Super admin user added successfully.'\n  - Duplicate email\n  + Super admin user added successfully.",
+      "children" : [ {
+        "name" : "test_crud_superAdmin",
+        "uid" : "3cd5d796126c2dc4",
+        "parentUid" : "450a2e0e602919268c15fc2318cbdcdb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948611458,
+          "stop" : 1591948626618,
+          "duration" : 15160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_superAdmin",
+        "uid" : "861a9e9d4efc3094",
+        "parentUid" : "450a2e0e602919268c15fc2318cbdcdb",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482209088,
+          "stop" : 1592482224947,
+          "duration" : 15859
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "450a2e0e602919268c15fc2318cbdcdb"
+    }, {
+      "name" : "AssertionError: assert 'Duplicate email' == 'Fleet owner user added successfully.'\n  - Duplicate email\n  + Fleet owner user added successfully.",
+      "children" : [ {
+        "name" : "test_crud_fleetOnwer",
+        "uid" : "dff4e75f47f115f4",
+        "parentUid" : "e72466949a5259c7a7d1fbf615183288",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948627137,
+          "stop" : 1591948642313,
+          "duration" : 15176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_fleetOnwer",
+        "uid" : "85769f5d1ae68ea5",
+        "parentUid" : "e72466949a5259c7a7d1fbf615183288",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482225513,
+          "stop" : 1592482241179,
+          "duration" : 15666
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e72466949a5259c7a7d1fbf615183288"
+    }, {
+      "name" : "AssertionError: assert 'Duplicate email' == 'Vehicle owner (driv... added successfully.'\n  - Duplicate email\n  + Vehicle owner (driver) user added successfully.",
+      "children" : [ {
+        "name" : "test_crud_driver",
+        "uid" : "1c45bc9a023e5e4d",
+        "parentUid" : "95b2ff551b6e227da6658f1622b4b49d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948642837,
+          "stop" : 1591948662968,
+          "duration" : 20131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_driver",
+        "uid" : "dfe4d40902d1f7df",
+        "parentUid" : "95b2ff551b6e227da6658f1622b4b49d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482167082,
+          "stop" : 1592482187296,
+          "duration" : 20214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "95b2ff551b6e227da6658f1622b4b49d"
+    }, {
+      "name" : "AssertionError: assert 'Duplicate email' == 'Passenger user added successfully.'\n  - Duplicate email\n  + Passenger user added successfully.",
+      "children" : [ {
+        "name" : "test_crud_passenger",
+        "uid" : "79e614ee8e0ddb85",
+        "parentUid" : "89871eb149a43d997b4b63b1002ebaa3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948663492,
+          "stop" : 1591948683617,
+          "duration" : 20125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_passenger",
+        "uid" : "88788beb5369d74e",
+        "parentUid" : "89871eb149a43d997b4b63b1002ebaa3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482188130,
+          "stop" : 1592482208340,
+          "duration" : 20210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "89871eb149a43d997b4b63b1002ebaa3"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

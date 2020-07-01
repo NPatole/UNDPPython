@@ -1,0 +1,125 @@
+{
+  "uid" : "64a5e67cc6ae9467",
+  "name" : "test_addFleet",
+  "fullName" : "tests.test_Fleets.TestFleets#test_addFleet",
+  "historyId" : "8007776e780f266f0c76e6dd5d0e7a67",
+  "time" : {
+    "start" : 1591948552171,
+    "stop" : 1591948602174,
+    "duration" : 50003
+  },
+  "status" : "broken",
+  "statusMessage" : "UnboundLocalError: local variable 'Exception' referenced before assignment",
+  "statusTrace" : "self = <tests.test_Fleets.TestFleets instance at 0x10c9835f0>\n\n    def test_addFleet(self):\n        TestFleets.fleets.click_on_button(TestFleets.fleets.fleetsMenu)\n        if TestFleets.fleets.entry_present_intable(TestFleets.fleets.fleetTableId, self.configfileParser(\"FleetName\")):\n            TestFleets.fleets.deleteFleet()\n>       TestFleets.fleets.addFleet()\n\ntests/test_Fleets.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npageObjects/Fleets.py:39: in addFleet\n    self.assignOwnerToFleet()\npageObjects/Fleets.py:32: in assignOwnerToFleet\n    self.click_on_button(self.selectCheckBox)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pageObjects.Fleets.Fleets instance at 0x10c927680>, locator = ('xpath', \"//td[@class='no-sort']\")\n\n    def click_on_button(self, locator):\n    \n        try:\n            time.sleep(2)\n            self.wait_for_element(locator)\n            self.driver.find_element(*locator).click()\n        except  StaleElementReferenceException as Exception:\n            time.sleep(10)\n            self.wait_for_element(locator)\n            self.driver.find_element(*locator).click()\n    \n>       except Exception as e:\nE       UnboundLocalError: local variable 'Exception' referenced before assignment\n\npageObjects/BasePage.py:38: UnboundLocalError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "test_navigateToFleetMenu",
+    "time" : {
+      "start" : 1591948547803,
+      "stop" : 1591948552166,
+      "duration" : 4363
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setup",
+    "time" : {
+      "start" : 1591948497854,
+      "stop" : 1591948547803,
+      "duration" : 49949
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "UnboundLocalError: local variable 'Exception' referenced before assignment",
+    "statusTrace" : "self = <tests.test_Fleets.TestFleets instance at 0x10c9835f0>\n\n    def test_addFleet(self):\n        TestFleets.fleets.click_on_button(TestFleets.fleets.fleetsMenu)\n        if TestFleets.fleets.entry_present_intable(TestFleets.fleets.fleetTableId, self.configfileParser(\"FleetName\")):\n            TestFleets.fleets.deleteFleet()\n>       TestFleets.fleets.addFleet()\n\ntests/test_Fleets.py:23: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \npageObjects/Fleets.py:39: in addFleet\n    self.assignOwnerToFleet()\npageObjects/Fleets.py:32: in assignOwnerToFleet\n    self.click_on_button(self.selectCheckBox)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <pageObjects.Fleets.Fleets instance at 0x10c927680>, locator = ('xpath', \"//td[@class='no-sort']\")\n\n    def click_on_button(self, locator):\n    \n        try:\n            time.sleep(2)\n            self.wait_for_element(locator)\n            self.driver.find_element(*locator).click()\n        except  StaleElementReferenceException as Exception:\n            time.sleep(10)\n            self.wait_for_element(locator)\n            self.driver.find_element(*locator).click()\n    \n>       except Exception as e:\nE       UnboundLocalError: local variable 'Exception' referenced before assignment\n\npageObjects/BasePage.py:38: UnboundLocalError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a097b758c944bc93",
+      "name" : "stdout",
+      "source" : "a097b758c944bc93.txt",
+      "type" : "text/plain",
+      "size" : 48
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "setup::0",
+    "time" : {
+      "start" : 1591948684147,
+      "stop" : 1591948684252,
+      "duration" : 105
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_Fleets"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestFleets"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "host",
+    "value" : "tml.local"
+  }, {
+    "name" : "thread",
+    "value" : "1726-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython2"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_Fleets"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "64a5e67cc6ae9467.json",
+  "parameterValues" : [ ]
+}

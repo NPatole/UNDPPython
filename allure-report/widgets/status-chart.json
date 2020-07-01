@@ -1,0 +1,151 @@
+[ {
+  "uid" : "88788beb5369d74e",
+  "name" : "test_crud_passenger",
+  "time" : {
+    "start" : 1592482188130,
+    "stop" : 1592482208340,
+    "duration" : 20210
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "491d096a5732ad71",
+  "name" : "test_addsuperadmin",
+  "time" : {
+    "start" : 1589966445354,
+    "stop" : 1589966455365,
+    "duration" : 10011
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1c45bc9a023e5e4d",
+  "name" : "test_crud_driver",
+  "time" : {
+    "start" : 1591948642837,
+    "stop" : 1591948662968,
+    "duration" : 20131
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "1e331bfbd9932ca6",
+  "name" : "test_addFleet",
+  "time" : {
+    "start" : 1592482120975,
+    "stop" : 1592482150142,
+    "duration" : 29167
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "861a9e9d4efc3094",
+  "name" : "test_crud_superAdmin",
+  "time" : {
+    "start" : 1592482209088,
+    "stop" : 1592482224947,
+    "duration" : 15859
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "58b1a8499a730096",
+  "name" : "test_deleteFleet",
+  "time" : {
+    "start" : 1591948602831,
+    "stop" : 1591948605912,
+    "duration" : 3081
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "79e614ee8e0ddb85",
+  "name" : "test_crud_passenger",
+  "time" : {
+    "start" : 1591948663492,
+    "stop" : 1591948683617,
+    "duration" : 20125
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "64a5e67cc6ae9467",
+  "name" : "test_addFleet",
+  "time" : {
+    "start" : 1591948552171,
+    "stop" : 1591948602174,
+    "duration" : 50003
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "456ac5df3fba2ccd",
+  "name" : "test_deleteFleet",
+  "time" : {
+    "start" : 1592482150146,
+    "stop" : 1592482162065,
+    "duration" : 11919
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dff4e75f47f115f4",
+  "name" : "test_crud_fleetOnwer",
+  "time" : {
+    "start" : 1591948627137,
+    "stop" : 1591948642313,
+    "duration" : 15176
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "85769f5d1ae68ea5",
+  "name" : "test_crud_fleetOnwer",
+  "time" : {
+    "start" : 1592482225513,
+    "stop" : 1592482241179,
+    "duration" : 15666
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "603b7152db990f9f",
+  "name" : "test_addsuperadmin3",
+  "time" : {
+    "start" : 1589966455374,
+    "stop" : 1589966455374,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3cd5d796126c2dc4",
+  "name" : "test_crud_superAdmin",
+  "time" : {
+    "start" : 1591948611458,
+    "stop" : 1591948626618,
+    "duration" : 15160
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "a37cb2a6133285b",
+  "name" : "test_addsuperadmin2",
+  "time" : {
+    "start" : 1589966455370,
+    "stop" : 1589966455371,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "dfe4d40902d1f7df",
+  "name" : "test_crud_driver",
+  "time" : {
+    "start" : 1592482167082,
+    "stop" : 1592482187296,
+    "duration" : 20214
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

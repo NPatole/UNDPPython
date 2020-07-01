@@ -1,0 +1,289 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "tml.local",
+    "children" : [ {
+      "name" : "1726-MainThread",
+      "children" : [ {
+        "name" : "test_addFleet",
+        "uid" : "64a5e67cc6ae9467",
+        "parentUid" : "a36fe8b5cf3fa676deabe7c521bbb09e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1591948552171,
+          "stop" : 1591948602174,
+          "duration" : 50003
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_passenger",
+        "uid" : "79e614ee8e0ddb85",
+        "parentUid" : "a36fe8b5cf3fa676deabe7c521bbb09e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948663492,
+          "stop" : 1591948683617,
+          "duration" : 20125
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_fleetOnwer",
+        "uid" : "dff4e75f47f115f4",
+        "parentUid" : "a36fe8b5cf3fa676deabe7c521bbb09e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948627137,
+          "stop" : 1591948642313,
+          "duration" : 15176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_superAdmin",
+        "uid" : "3cd5d796126c2dc4",
+        "parentUid" : "a36fe8b5cf3fa676deabe7c521bbb09e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948611458,
+          "stop" : 1591948626618,
+          "duration" : 15160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_driver",
+        "uid" : "1c45bc9a023e5e4d",
+        "parentUid" : "a36fe8b5cf3fa676deabe7c521bbb09e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1591948642837,
+          "stop" : 1591948662968,
+          "duration" : 20131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_deleteFleet",
+        "uid" : "58b1a8499a730096",
+        "parentUid" : "a36fe8b5cf3fa676deabe7c521bbb09e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1591948602831,
+          "stop" : 1591948605912,
+          "duration" : 3081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "a36fe8b5cf3fa676deabe7c521bbb09e"
+    }, {
+      "name" : "1432-MainThread",
+      "children" : [ {
+        "name" : "test_crud_driver",
+        "uid" : "dfe4d40902d1f7df",
+        "parentUid" : "9de5b6d2cff65ad3558c8e7ed704d943",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482167082,
+          "stop" : 1592482187296,
+          "duration" : 20214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_fleetOnwer",
+        "uid" : "85769f5d1ae68ea5",
+        "parentUid" : "9de5b6d2cff65ad3558c8e7ed704d943",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482225513,
+          "stop" : 1592482241179,
+          "duration" : 15666
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_deleteFleet",
+        "uid" : "456ac5df3fba2ccd",
+        "parentUid" : "9de5b6d2cff65ad3558c8e7ed704d943",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592482150146,
+          "stop" : 1592482162065,
+          "duration" : 11919
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_addFleet",
+        "uid" : "1e331bfbd9932ca6",
+        "parentUid" : "9de5b6d2cff65ad3558c8e7ed704d943",
+        "status" : "passed",
+        "time" : {
+          "start" : 1592482120975,
+          "stop" : 1592482150142,
+          "duration" : 29167
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_passenger",
+        "uid" : "88788beb5369d74e",
+        "parentUid" : "9de5b6d2cff65ad3558c8e7ed704d943",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482188130,
+          "stop" : 1592482208340,
+          "duration" : 20210
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_crud_superAdmin",
+        "uid" : "861a9e9d4efc3094",
+        "parentUid" : "9de5b6d2cff65ad3558c8e7ed704d943",
+        "status" : "failed",
+        "time" : {
+          "start" : 1592482209088,
+          "stop" : 1592482224947,
+          "duration" : 15859
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9de5b6d2cff65ad3558c8e7ed704d943"
+    }, {
+      "name" : "30379-MainThread",
+      "children" : [ {
+        "name" : "test_addsuperadmin2",
+        "uid" : "a37cb2a6133285b",
+        "parentUid" : "1a5281955f5720c5f431f41a41ca12ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589966455370,
+          "stop" : 1589966455371,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_addsuperadmin",
+        "uid" : "491d096a5732ad71",
+        "parentUid" : "1a5281955f5720c5f431f41a41ca12ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589966445354,
+          "stop" : 1589966455365,
+          "duration" : 10011
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_addsuperadmin3",
+        "uid" : "603b7152db990f9f",
+        "parentUid" : "1a5281955f5720c5f431f41a41ca12ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589966455374,
+          "stop" : 1589966455374,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "1a5281955f5720c5f431f41a41ca12ad"
+    }, {
+      "name" : "30064-MainThread",
+      "children" : [ {
+        "name" : "test_addsuperadmin2",
+        "uid" : "f170a51061a8e511",
+        "parentUid" : "bd7154fa9f19759bf908486fc3383ffb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589962381371,
+          "stop" : 1589962381371,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_addsuperadmin",
+        "uid" : "8d6fff13ab6162c5",
+        "parentUid" : "bd7154fa9f19759bf908486fc3383ffb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589962349238,
+          "stop" : 1589962381366,
+          "duration" : 32128
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "bd7154fa9f19759bf908486fc3383ffb"
+    }, {
+      "name" : "30211-MainThread",
+      "children" : [ {
+        "name" : "test_addsuperadmin3",
+        "uid" : "723e0ec618292f7f",
+        "parentUid" : "3f46a83243d21a64b127c3f6ee39935d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589964566591,
+          "stop" : 1589964566591,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_addsuperadmin2",
+        "uid" : "706e40b825da5261",
+        "parentUid" : "3f46a83243d21a64b127c3f6ee39935d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589964566588,
+          "stop" : 1589964566588,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_addsuperadmin",
+        "uid" : "e223c13de17a7a07",
+        "parentUid" : "3f46a83243d21a64b127c3f6ee39935d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1589964554274,
+          "stop" : 1589964566584,
+          "duration" : 12310
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3f46a83243d21a64b127c3f6ee39935d"
+    } ],
+    "uid" : "bfb0b58e30186fab9b85ae6d1d4df5c7"
+  } ]
+}
